@@ -15,8 +15,6 @@ export function Card({ card, isRunning, setCards }: ICardProps) {
   const setGuess = (answer: 'yes' | 'no') => {
     setCards((cards) =>
       cards.map((c) => {
-        console.log(card === c);
-
         if (card.id === c.id) {
           return {
             ...card,

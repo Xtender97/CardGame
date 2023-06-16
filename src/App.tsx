@@ -34,8 +34,6 @@ function App() {
       );
     };
     isRunning && fetchData();
-
-    return () => {};
   }, [isRunning]);
 
   useEffect(() => {
